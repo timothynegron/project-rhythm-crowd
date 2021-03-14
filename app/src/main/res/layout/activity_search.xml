@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_background">
+
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSearchByRecommendations"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/category_toggle"
+        android:checked="true"
+        android:text="@string/recommendations"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/recommendations"
+        android:textOn="@string/recommendations"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonSearchByName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSearchBySongs"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/category_toggle"
+        android:text="@string/songs"
+        android:textColor="@color/button_symbols"
+        android:textOff="@string/songs"
+        android:textOn="@string/songs"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonSearchByName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonSearchByName"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonSearchByName" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSearchByName"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/category_toggle"
+        android:checked="false"
+        android:text="@string/artist"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/artist"
+        android:textOn="@string/artist"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonSearchByRecommendations"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonSearchBySongs"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonSearchByRecommendations"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonSearchByRecommendations" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewSearch"
+        android:layout_width="408dp"
+        android:layout_height="674dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonSearchByRecommendations"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSearchArtistByName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:backgroundTint="@color/buttonColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonAddProfilePost"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/add_profile_post"
+        android:textColor="@color/cardview_light_background"
+        app:backgroundTint="#0779e4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddProfilePostTxt" />
+
+    <EditText
+        android:id="@+id/editTextAddProfilePostTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/write_post"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="300"
+        android:maxLines="10"
+        android:scrollHorizontally="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonAddProfilePostSong" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonAddProfilePostSong"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/category_toggle"
+        android:checked="true"
+        android:text="@string/song"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/song"
+        android:textOn="@string/song"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonAddProfileProfilePostSchedule"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonAddProfilePostMerch"
+        android:layout_width="0dp"
+        android:layout_height="25sp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/category_toggle"
+        android:text="@string/merch"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/merch"
+        android:textOn="@string/merch"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonAddProfilePostSocial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonAddProfilePostSocial"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonAddProfilePostSocial" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonAddProfilePostSocial"
+        android:layout_width="0dp"
+        android:layout_height="25sp"
+        android:background="@drawable/category_toggle"
+        android:text="@string/social"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/social"
+        android:textOn="@string/social"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonAddProfileProfilePostSchedule"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonAddProfilePostMerch"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonAddProfileProfilePostSchedule"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonAddProfileProfilePostSchedule" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonAddProfileProfilePostSchedule"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:background="@drawable/category_toggle"
+        android:text="@string/schedule"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/schedule"
+        android:textOn="@string/schedule"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonAddProfilePostSong"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonAddProfilePostSocial"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonAddProfilePostSong"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonAddProfilePostSong" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

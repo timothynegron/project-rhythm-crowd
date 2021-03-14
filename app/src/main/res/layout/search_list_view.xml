@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/my_background">
+
+    <TextView
+        android:id="@+id/listViewSearchUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/username"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listViewSearchNumFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="99,999"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewSearchCity" />
+
+    <TextView
+        android:id="@+id/textViewSearchFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/followers"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewSearchNumFollowers"
+        app:layout_constraintStart_toEndOf="@+id/listViewSearchNumFollowers"
+        app:layout_constraintTop_toTopOf="@+id/listViewSearchNumFollowers" />
+
+    <TextView
+        android:id="@+id/listViewSearchNumFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="99,999"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSearchFollowers"
+        app:layout_constraintStart_toEndOf="@+id/textViewSearchFollowers"
+        app:layout_constraintTop_toTopOf="@+id/textViewSearchFollowers" />
+
+    <TextView
+        android:id="@+id/listViewSearchFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/following"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewSearchNumFollowing"
+        app:layout_constraintStart_toEndOf="@+id/listViewSearchNumFollowing"
+        app:layout_constraintTop_toTopOf="@+id/listViewSearchNumFollowing" />
+
+    <TextView
+        android:id="@+id/listViewSearchBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/bio"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewSearchUsername" />
+
+    <TextView
+        android:id="@+id/listViewSearchCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/city"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewSearchBio" />
+
+    <TextView
+        android:id="@+id/listViewSearchState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/state"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewSearchCity"
+        app:layout_constraintStart_toEndOf="@+id/listViewSearchCity"
+        app:layout_constraintTop_toTopOf="@+id/listViewSearchCity" />
+</androidx.constraintlayout.widget.ConstraintLayout>

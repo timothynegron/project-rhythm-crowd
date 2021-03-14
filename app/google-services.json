@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "779278875693",
+    "firebase_url": "https://rhythmcrowd-f5dcb.firebaseio.com",
+    "project_id": "rhythmcrowd-f5dcb",
+    "storage_bucket": "rhythmcrowd-f5dcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779278875693:android:c7f2b7691718c9f01c4ca4",
+        "android_client_info": {
+          "package_name": "com.example.rhythmcrowd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779278875693-ov0ep9ucd08pi71bkdtopdofmoss4eef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKvgaI5wykKgeppUerH2eLyK84Sg5avLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779278875693-ov0ep9ucd08pi71bkdtopdofmoss4eef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

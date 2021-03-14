@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/my_background">
+
+    <TextView
+        android:id="@+id/listViewConnectionsUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listViewConnectionsStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/since"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewConnectionsUsername"
+        app:layout_constraintStart_toEndOf="@+id/listViewConnectionsUsername"
+        app:layout_constraintTop_toTopOf="@+id/listViewConnectionsUsername" />
+
+    <TextView
+        android:id="@+id/listViewConnectionsDateStartedConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/date_connection_started"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewConnectionsStarted"
+        app:layout_constraintStart_toEndOf="@+id/listViewConnectionsStarted"
+        app:layout_constraintTop_toTopOf="@+id/listViewConnectionsStarted" />
+</androidx.constraintlayout.widget.ConstraintLayout>

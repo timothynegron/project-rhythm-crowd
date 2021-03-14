@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_background"
+    tools:context=".Activities.MainActivityFragment">
+
+    <ToggleButton
+        android:id="@+id/toggleButtonLatest"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/category_toggle"
+        android:checked="true"
+        android:text="@string/latest"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/latest"
+        android:textOn="@string/latest"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonTrending"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonPopular"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/category_toggle"
+        android:text="@string/popular"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/popular"
+        android:textOn="@string/popular"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonTrending"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonSearch"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonTrending"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonTrending" />
+
+
+    <ToggleButton
+        android:id="@+id/toggleButtonTrending"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/category_toggle"
+        android:text="@string/trending"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/trending"
+        android:textOn="@string/trending"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonLatest"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButtonPopular"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonLatest"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonLatest" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSearch"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/category_toggle"
+        android:text="@string/search"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/search"
+        android:textOn="@string/search"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonPopular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonPopular"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonPopular" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewPost"
+        android:layout_width="400dp"
+        android:layout_height="672dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonLatest"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
