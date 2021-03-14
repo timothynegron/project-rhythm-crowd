@@ -48,11 +48,11 @@ Built With
 
 ##### Sign in:
 
-![sign in activity image] (assets/sign-in.png)
+![sign in activity image](assets/sign-in.png)
 
 ##### Sign up:
 
-![sign up activity image] (assets/sign-up.png)
+![sign up activity image](assets/sign-up.png)
 
 ##### Global feed:
 
