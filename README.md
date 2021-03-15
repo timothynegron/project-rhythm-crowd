@@ -87,14 +87,11 @@ How To Use This App
 
 ![comments image](assets/comments.png)
 
-##### Profile page:
+##### Following list:
 
-![]()
+![following list image](assets/following-list.png)
 
 ##### Followers list:
 
-![]()
+![followers list image](assets/followers-list.png)
 
-##### Following list:
-
-![]()
