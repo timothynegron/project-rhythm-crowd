@@ -25,7 +25,6 @@ How To Use This App
 * [AppCompatActivity](https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity)
 * [Google Firebase Authentication](https://firebase.google.com/docs/auth)
 * [Google Cloud Firestore](https://firebase.google.com/docs/firestore)
-* [Google Firebase Realtime Database](https://firebase.google.com/docs/database)
 
 ### Current Features
 
@@ -61,7 +60,7 @@ How To Use This App
 * I want to be able to make a post that everyone using the app can see so that I could market my brand
 * I want to be able to follow other users
 * I want to be able to view people I follow on a list
-* I want to be able to view people that are following me
+* I want to be able to view people that are following me on a list
 * I want to be able to comment on global post
 * I want to be able to search for an artist by name
 * I want to be able to search for artist through a list
