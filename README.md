@@ -2,7 +2,7 @@
 
 ### About
 
-A social media music application for independent artist. Project Rhythm Crowd gives independent artist a platform catered to them. Uses Google Firebase Authentication and Google Cloud Firestore. (Personal Project)
+A social media music application for music independent artist. Project Rhythm Crowd gives independent artist a platform catered to them. Uses Google Firebase Authentication and Google Cloud Firestore. (Personal Project)
 
 How To Use This App
 
@@ -27,7 +27,7 @@ How To Use This App
 * [Google Cloud Firestore](https://firebase.google.com/docs/firestore)
 * [Google Firebase Realtime Database](https://firebase.google.com/docs/database)
 
-### Features
+### Current Features
 
 * Sign in Authentication
 * Global post feed
@@ -44,6 +44,16 @@ How To Use This App
 * Follow other users
 * Followers list
 * Following list
+
+### Future Features
+
+* Artist create their own store
+* Purchase merchandise through app
+* Live stream to your fans
+* Search for Artist by Music Genre
+* Direct message to other users
+* Gig offers
+* Search for post by hast tags
 
 ### User Stories
 
@@ -71,6 +81,10 @@ How To Use This App
 ![sign up activity image](assets/sign-up.png)
 
 ##### Global feed:
+
+##### Commenting on global post:
+
+![comments image](assets/comments.png)
 
 ##### Sorting by popularity:
 
