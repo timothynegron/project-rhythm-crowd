@@ -38,8 +38,6 @@ public class SearchActivity extends AppCompatActivity {
     private ListenerRegistration searchListenerRegistration;
     private FirebaseFirestore db;
     private ArrayList<User> usersArrayList = new ArrayList<>();
-
-
     private SearchAdapter searchAdapter;
     private RecyclerView rV;
 

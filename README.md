@@ -10,7 +10,7 @@ How To Use This App
 2. `Clone` it to your computer
 3. Make sure that you have `Android SDK API 28` or higher
 4. If you don't, install it and `sync project with gradle files`
-5. Rebuild and `run 'app'`
+5. `Rebuild` and `run 'app'`
 6. Create an account through the app
 7. Sign in
 8. Enjoy

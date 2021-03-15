@@ -43,10 +43,8 @@ public class MainActivityFragment extends Fragment implements PostAdapter.OnPost
     private ListenerRegistration postsListenerRegistration;
 
     @Override
-    public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState
-    ) {
+    public View onCreateView( LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_main_fragment, container, false);
         initializeAttributes(view);
         setToggle();
